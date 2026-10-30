@@ -1,0 +1,419 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roselyne Arege | ICT Teacher</title>
+
+    <style>
+        /* RESET */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            color: #263747;
+            line-height: 1.6;
+            padding: 10px;
+        }
+
+        /* OUTER WEBSITE BOX MODEL */
+        .website {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            border: 5px solid #102a43;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+
+        /* HEADER */
+        header {
+            background-color: #102a43;
+            color: white;
+            padding: 15px 22px;
+            border-bottom: 3px solid #70d6ff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* PROFILE PHOTO AND NAME */
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .profile img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+            display: block;
+            flex-shrink: 0;
+        }
+
+        .profile h1 {
+            color: white;
+            font-size: 21px;
+            line-height: 1.3;
+        }
+
+        .profile p {
+            color: #d9e6f2;
+            font-size: 13px;
+        }
+
+        /* NAVIGATION */
+        header nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 6px 0;
+        }
+
+        header nav a:visited {
+            color: white;
+        }
+
+        header nav a:hover,
+        header nav a:focus {
+            color: #70d6ff;
+            text-decoration: underline;
+        }
+
+        /* MAIN CONTENT */
+        main {
+            padding: 18px 25px;
+            background-color: #f4f7fb;
+        }
+
+        /* HOME INTRODUCTION */
+        .home-text {
+            margin: 0 0 12px;
+            padding: 0;
+            background: transparent;
+        }
+
+        /* HEADING AND LOGO ON ONE LINE */
+        .heading-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .heading-row h2 {
+            color: #102a43;
+            font-size: 25px;
+            line-height: 1.3;
+            font-style: italic;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .tick {
+            color: green;
+            font-size: 22px;
+            margin-left: 4px;
+        }
+
+        .heading-logo {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            flex-shrink: 0;
+            margin-left: auto;
+        }
+
+        .home-text p {
+            margin: 0 0 10px;
+        }
+
+        /* BODY IMAGE AND VIDEO SIDE BY SIDE */
+        .media-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+            margin: 0 0 15px;
+            padding: 0;
+        }
+
+        .media-item {
+            flex: 1;
+            min-width: 0;
+            padding: 0;
+            margin: 0;
+            background: transparent;
+        }
+
+        /* BODY IMAGE */
+        .home-image {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border: 3px solid #102a43;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        /* VIDEO */
+        .video-section video {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: 160px;
+            object-fit: contain;
+            background-color: black;
+            border: none;
+            border-radius: 8px;
+            margin: 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #102a43;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-top: 3px solid #70d6ff;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* TABLETS AND MOBILE PHONES */
+        @media (max-width: 760px) {
+            body {
+                padding: 0;
+            }
+
+            .website {
+                width: 100%;
+                max-width: 900px;
+                margin: 0 auto;
+                border-width: 3px;
+                border-radius: 0;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+                gap: 12px;
+            }
+
+            .profile img {
+                width: 65px;
+                height: 65px;
+            }
+
+            .profile h1 {
+                font-size: 19px;
+            }
+
+            .profile p {
+                font-size: 12px;
+            }
+
+            header nav {
+                justify-content: flex-start;
+                gap: 18px;
+                width: 100%;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            .heading-row h2 {
+                font-size: 21px;
+            }
+
+            .heading-logo {
+                width: 38px;
+                height: 38px;
+            }
+
+            .media-row {
+                gap: 12px;
+            }
+
+            .home-image,
+            .video-section video {
+                height: 140px;
+            }
+        }
+
+        /* SMALL PHONE SCREENS */
+        @media (max-width: 400px) {
+            .heading-row {
+                gap: 6px;
+            }
+
+            .heading-row h2 {
+                font-size: 18px;
+            }
+
+            .heading-logo {
+                width: 32px;
+                height: 32px;
+            }
+
+            .tick {
+                font-size: 18px;
+            }
+
+            .media-row {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .media-item {
+                width: 100%;
+                flex: none;
+            }
+
+            .home-image {
+                width: 160px;
+                height: 160px;
+                margin: 0 auto;
+            }
+
+            .video-section video {
+                width: 100%;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- OUTER WEBSITE BOX -->
+    <div class="website">
+
+        <!-- HEADER -->
+        <header>
+
+            <div class="profile">
+                <img src="chantal.jpg" alt="Profile photo">
+
+                <div>
+                    <h1>Roselyne Arege</h1>
+                    <p>ICT | Computer Science | IGCSE | A-LEVEL Teacher</p>
+                    <p>Inspire. Teach. Empower.</p>
+                </div>
+            </div>
+
+            <!-- NAVIGATION LINKS -->
+            <nav>
+                <a href="index.html#home">Home</a>
+                <a href="About%20me.html">About Me</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- HOME INTRODUCTION -->
+            <section id="home" class="home-text">
+
+                <div class="heading-row">
+                    <h2>
+                        Welcome to My Portfolio
+                        <span class="tick">✓</span>
+                    </h2>
+
+                    <img
+                        src="Logo.jfif"
+                        alt="Portfolio logo"
+                        class="heading-logo"
+                    >
+                </div>
+
+                <p>
+                    I believe every learner has the potential to achieve
+                    great things when curiosity meets opportunity. My approach
+                    to teaching ICT and Computer Science goes beyond textbooks,
+                    inspiring learners to explore technology, think critically
+                    and develop creative solutions to real-world problems.
+                    Check out <b><i><u>Teaching in Action</u></i></b> below.
+                </p>
+
+            </section>
+
+            <!-- BODY IMAGE AND TEACHING VIDEO -->
+            <section class="media-row">
+
+                <!-- BODY IMAGE -->
+                <div class="media-item">
+                    <img
+                        src="Myclip.jfif"
+                        alt="ICT teaching and learning"
+                        class="home-image"
+                    >
+                </div>
+
+                <!-- TEACHING VIDEO -->
+                <div class="media-item video-section">
+                    <video controls preload="metadata">
+                        <source
+                            src="teaching video.mp4"
+                            type="video/mp4"
+                        >
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>
+                &copy; 2026 Roselyne Arege |
+                ICT | Computer Science Teacher
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+```

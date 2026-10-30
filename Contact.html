@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | ICT Teacher</title>
+
+    <style>
+        /* RESET */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 20px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            background-color: #e9edf3;
+            color: #333;
+            padding: 100px;
+        }
+
+        /* OUTER BOX MODEL */
+        .container {
+            max-width: 850px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: white;
+            border: 3px solid navy;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* HEADER */
+        header {
+            background-color: navy;
+            color: white;
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .header-title h1 {
+            font-size: 22px;
+        }
+
+        .header-title p {
+            font-size: 13px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        /* MAIN CONTENT */
+        main {
+            max-width: 600px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        section {
+            background-color: white;
+            border: 2px solid navy;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: navy;
+            font-size: 22px;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        section p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* CONTACT LINKS */
+        .contact-links {
+            margin-top: 15px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            color: navy;
+            font-weight: bold;
+            text-decoration: none;
+            margin-bottom: 10px;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-links a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 13px;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+            }
+
+            .header-title h1 {
+                font-size: 20px;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            main {
+                margin: 15px auto;
+                padding: 0 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- OUTER CONTAINER -->
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <div class="header-title">
+                <h1>ICT Teacher Portfolio</h1>
+                <p>Inspiring Digital Learning</p>
+            </div>
+
+            <!-- NAVIGATION LINKS -->
+            <nav>
+                <a href="index.html#home">Home</a>
+                <a href="About%20me.html">About Me</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!-- CONTACT CONTENT -->
+        <main>
+            <section id="contact">
+                <h2>Contact Me</h2>
+
+                <p>
+                    Thank you for visiting my ICT teaching portfolio.
+                    I welcome opportunities to connect with fellow
+                    educators, schools, and other professionals who
+                    share an interest in ICT education and digital learning.
+                </p>
+
+                <p>
+                    Please use the contact details below to get in touch
+                    regarding professional opportunities, collaboration,
+                    or ICT teaching and learning.
+                </p>
+
+                <div class="contact-links">
+                    <!-- Replace the placeholder with your actual email -->
+                    <p>
+                        <strong>Email:</strong><br>
+                        <a href="mailto:angelroselyne@gmail.com">
+                            angelroselyne@gmail.com
+                        </a>
+                    </p>
+
+                    <!-- Replace the placeholder with your actual phone number -->
+                    <p>
+                        <strong>Phone:</strong><br>
+                        <a href="tel:+254725927729">
+                            +254 725927729
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 ICT Teacher Portfolio. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

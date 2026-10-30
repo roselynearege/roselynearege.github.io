@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills | ICT Teacher</title>
+
+    <style>
+        /* RESET */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            background-color: #e9edf3;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* OUTER BOX MODEL */
+        .container {
+            max-width: 850px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: white;
+            border: 3px solid navy;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* HEADER */
+        header {
+            background-color: navy;
+            color: white;
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .header-title h1 {
+            font-size: 22px;
+        }
+
+        .header-title p {
+            font-size: 13px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        /* MAIN CONTENT */
+        main {
+            max-width: 650px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        section {
+            background-color: white;
+            border: 2px solid navy;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: navy;
+            font-size: 22px;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            color: navy;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 6px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        section ul {
+            padding-left: 22px;
+            margin-bottom: 12px;
+        }
+
+        section li {
+            margin-bottom: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 13px;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+            }
+
+            .header-title h1 {
+                font-size: 20px;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            main {
+                margin: 15px auto;
+                padding: 0 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- OUTER CONTAINER -->
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <div class="header-title">
+                <h1>ICT Teacher Portfolio</h1>
+                <p>Inspiring Digital Learning</p>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="About.html">About Me</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!-- SKILLS CONTENT -->
+        <main>
+            <section id="skills">
+                <h2>My Professional Skills</h2>
+
+                <p>
+                    I have developed a range of ICT and teaching skills
+                    that support effective learning, practical activities,
+                    and the development of digital competence among learners.
+                </p>
+
+                <h3>ICT and Technical Skills</h3>
+                <ul>
+                    <li>Computer applications and digital literacy</li>
+                    <li>HTML and CSS web design</li>
+                    <li>Programming and algorithm development</li>
+                    <li>Database management and information processing</li>
+                    <li>Computer hardware and software troubleshooting</li>
+                    <li>Internet, networking, and digital safety</li>
+                </ul>
+
+                <h3>Teaching and Learning Skills</h3>
+                <ul>
+                    <li>Planning and delivering ICT lessons</li>
+                    <li>Developing worksheets, assessments, and revision materials</li>
+                    <li>Integrating technology into classroom learning</li>
+                    <li>Supporting learners with different learning needs</li>
+                    <li>Assessing learner progress and providing feedback</li>
+                </ul>
+
+                <h3>Professional Skills</h3>
+                <ul>
+                    <li>Communication and collaboration</li>
+                    <li>Problem-solving and critical thinking</li>
+                    <li>Classroom management and organisation</li>
+                    <li>Creativity and continuous professional development</li>
+                </ul>
+
+                <p>
+                    I continue to strengthen my skills to provide relevant,
+                    engaging, and practical ICT learning experiences that
+                    prepare students for a technology-driven world.
+                </p>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 ICT Teacher Portfolio. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
