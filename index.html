@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Roselyne Arege | ICT Educator</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eef2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243b53;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.website {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    border: 5px solid #102a43;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+}
+
+/* HEADER */
+header {
+    background: #102a43;
+    color: white;
+    padding: 15px 20px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 14px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+}
+
+.profile img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 3px solid #70d6ff;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    font-size: 27px;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.curriculum {
+    color: #70d6ff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.profession {
+    font-size: 14px;
+    color: white;
+}
+
+.tagline {
+    font-size: 12px;
+    color: #d9eaf7;
+    font-style: italic;
+}
+
+/* CV BUTTON */
+.cv-button {
+    display: inline-block;
+    background: #70d6ff;
+    color: #102a43;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background: white;
+    color: #102a43;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    border-top: 1px solid #49677f;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 11px;
+    font-size: 13px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #70d6ff;
+    color: #102a43;
+}
+
+/* MAIN CONTENT */
+main {
+    background: #f4f7fb;
+    padding: 18px 25px 5px;
+}
+
+.home-text {
+    margin-bottom: 12px;
+}
+
+.heading-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.heading-row h2 {
+    color: #102a43;
+    font-size: 25px;
+}
+
+.tick {
+    color: #168aad;
+}
+
+.heading-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.home-text p {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* MEDIA SECTION */
+.media-row {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.media-item {
+    flex: 1;
+    width: 50%;
+    min-width: 0;
+}
+
+.home-image {
+    display: block;
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    border: 2px solid #102a43;
+    border-radius: 7px;
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+    border-radius: 7px;
+    background: black;
+    border: 2px solid #102a43;
+}
+
+.video-section iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid #70d6ff;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+/* TABLETS */
+@media (max-width: 760px) {
+    .website {
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    header {
+        padding: 12px 12px 0;
+    }
+
+    .profile img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile-info h1 {
+        font-size: 23px;
+    }
+
+    main {
+        padding: 15px 15px 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+}
+
+/* MOBILE PHONES */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .website {
+        width: 100%;
+        margin: 0 auto;
+        border-width: 3px;
+    }
+
+    .header-top {
+        align-items: center;
+        gap: 8px;
+    }
+
+    .profile {
+        gap: 9px;
+    }
+
+    .profile img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .profile-info h1 {
+        font-size: 18px;
+    }
+
+    .curriculum {
+        font-size: 11px;
+    }
+
+    .profession {
+        font-size: 11px;
+    }
+
+    .tagline {
+        font-size: 10px;
+    }
+
+    .cv-button {
+        padding: 7px 8px;
+        font-size: 11px;
+    }
+
+    nav {
+        gap: 3px;
+        padding: 8px 0;
+    }
+
+    nav a {
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    main {
+        padding: 12px 10px 4px;
+    }
+
+    .heading-row h2 {
+        font-size: 19px;
+    }
+
+    .heading-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .home-text p {
+        font-size: 13px;
+    }
+
+    .media-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .media-item {
+        width: 100%;
+        flex: none;
+    }
+
+    .home-image {
+        height: 150px;
+    }
+
+    .video-section {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    footer {
+        padding: 8px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="website">
+
+<header>
+
+    <div class="header-top">
+
+        <div class="profile">
+
+            <img src="Chantal.jpg" alt="Roselyne Arege profile photo">
+
+            <div class="profile-info">
+
+                <h1>Roselyne Arege</h1>
+
+                <p class="curriculum">
+                    Pearson Edexcel | IGCSE &amp; International A Level
+                </p>
+
+                <p class="profession">
+                    ICT &amp; Computer Science Educator
+                </p>
+
+                <p class="tagline">
+                    Inspire. Teach. Empower.
+                </p>
+
+            </div>
+
+        </div>
+
+        <a href="./RoselyneCV.pdf"
+           class="cv-button"
+           download="RoselyneCV.pdf">
+            Download CV ↓
+        </a>
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <a href="./index.html#home">Home</a>
+
+        <a href="./About%20me.html">About Me</a>
+
+        <a href="./Skills.html">Skills</a>
+
+        <a href="./Teaching%20Resources.html">Teaching Resources</a>
+
+        <a href="./Document.html">Documents</a>
+
+        <a href="./Contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section id="home" class="home-text">
+
+        <div class="heading-row">
+
+            <h2>
+                Welcome to My Portfolio
+                <span class="tick">✓</span>
+            </h2>
+
+            <img src="./Logo.jfif"
+                 alt="Portfolio logo"
+                 class="heading-logo">
+
+        </div>
+
+        <p>
+            I believe every learner has the potential to achieve great
+            things when curiosity meets opportunity. My approach to
+            teaching ICT and Computer Science goes beyond textbooks,
+            inspiring learners to explore technology, think critically
+            and develop creative solutions to real-world problems.
+            Check out <b><i><u>Teaching in Action</u></i></b> below.
+        </p>
+
+    </section>
+
+    <!-- TEACHING PHOTO AND VIDEO -->
+    <section class="media-row">
+
+        <div class="media-item">
+
+            <img src="./Teacher.jpg"
+                 alt="ICT teaching and learning"
+                 class="home-image">
+
+        </div>
+
+        <div class="media-item">
+
+            <div class="video-section">
+
+                <iframe
+                    src="https://www.youtube.com/embed/soBXtz0_aUg"
+                    title="My ICT Teaching Demonstration"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; 2026 Roselyne Arege |
+        ICT &amp; Computer Science Educator
+    </p>
+
+</footer>
+
+</div>
+
+</body>
+</html>
